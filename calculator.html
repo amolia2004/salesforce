@@ -1,0 +1,37 @@
+<template>
+  <lightning-card title="Calculator" icon-name="custom:custom16">
+    <h2>
+        CALCULATOR
+      </h2>
+      <HR>
+    
+      <div>
+        <table border="1" width="50%">
+          <tr>
+            <td><b>Enter the Number1:=> <input type="text" id="no1" value={num1}  onchange={num1Change} required=""/> </b>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Enter the Number2:=> <input type="text" id="no2" value={num2}  onchange={num2Change} required=""/> </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Result :=> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="no3" value={num3} onchange={num3Change} disabled=""/> </b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <lightning-button label="Addition" onclick={dosum}> </lightning-button>
+              <lightning-button label="Substraction" onclick={dosub}> </lightning-button>
+              <lightning-button label="Multiplication" onclick={domul}> </lightning-button>
+              <lightning-button label="Division" onclick={dodiv}> </lightning-button>
+              <lightning-button label="Reset" onclick={doreset}> </lightning-button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    <hr>
+      <h1> <b> @ Created Using lwc concept By Amol K </b></h1>
+    </lightning-card>
+</template>
